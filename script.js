@@ -12,13 +12,12 @@ codes.forEach((code, idx) => {
 				codes[idx].blur();
 				setTimeout(()=> codes[idx+1].focus(),100);
 			}
-		}
-		else if(keyPressed === "Backspace"){
+		}else if(keyPressed === "Backspace"){
 			if(idx>0){
 				codes[idx].value = "";
 				codes[idx].blur();
 				setTimeout(()=> codes[idx-1].focus(),100)
 			}
 		}
-	})
+	});
 });
