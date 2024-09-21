@@ -5,7 +5,7 @@ codes.forEach((code, idx) => {
 	code.addEventListener("keydown", (e)=>{
 		const keyPressed= e.key;
 
-		if(keyPressed>=0 && keyPressed<=9){
+		if(keyPressed>='0' && keyPressed<='9'){
 			e.preventDefault();
 			codes[idx].value=keyPressed;
 			if(codes.length-1 > idx){
