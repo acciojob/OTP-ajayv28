@@ -6,7 +6,7 @@ codes.forEach((code, idx) => {
 		const keyPressed= e.key;
 
 		if(keyPressed>=0 && keyPressed<=9){
-			codes[idx].value="";
+			codes[idx].value=keyPressed;
 			if(codes.length-1 > idx){
 				setTimeout(()=> codes[idx+1].focus(),100);
 			}
