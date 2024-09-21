@@ -16,7 +16,7 @@ codes.forEach((code, idx) => {
 			if(idx>0){
 				codes[idx].value = "";
 				codes[idx].blur();
-				setTimeout(()=> codes[idx-1].focus(),100)
+				setTimeout(()=> codes[idx-1].focus(),100);
 			}
 		}
 	});
